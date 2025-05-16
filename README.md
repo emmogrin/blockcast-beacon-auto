@@ -52,6 +52,11 @@ Backup your private key from:
 ~/.blockcast/certs/gw_challenge.key
 
 ---
+To restart the node after a system reboot:
+ ```bash
+docker compose up -d
+ ```
+This will resume your Blockcast node without resetting your keys or registration.
 
 Credits
 
