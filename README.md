@@ -1,4 +1,4 @@
-# Blockcast BEACON Auto-Installer for PC and VPS 
+# SAINT KHEN's Blockcast BEACON Auto-Installer for PC and VPS 
 
 > One-click setup script for Blockcast BEACON node  
 > Built by **SAINT KHEN** — [@admirkhen](https://twitter.com/admirkhen)
