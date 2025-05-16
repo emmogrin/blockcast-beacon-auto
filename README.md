@@ -33,7 +33,7 @@ After Running the Script
 1. Copy the Hardware ID, Challenge Key, and Registration URL from the terminal output.
 2. Visit https:
  ```bash
- //app.blockcast.network
+ https://app.blockcast.network?referral-code=0srony
  ```
 
 3. Register your node using the URL or manually.
