@@ -5,6 +5,13 @@
 
 echo ">>> BLOCKCAST BEACON SETUP STARTING..."
 
+# Detect sudo availability
+if command -v sudo &> /dev/null; then
+    SUDO="sudo"
+else
+    SUDO=""
+fi
+
 # Check if Docker is installed
 if ! command -v docker &> /dev/null
 then
@@ -24,17 +31,17 @@ cd beacon-docker-compose || {
 
 # Start the containers
 echo ">>> Starting Blockcast BEACON Node..."
-sudo docker compose up -d
+$SUDO docker compose up -d
 
 echo ">>> Checking container status..."
-sudo docker compose ps
+$SUDO docker compose ps
 
 # Wait a few seconds to ensure services are up
 sleep 5
 
 # Initialize and fetch Hardware ID + Challenge Key
 echo ">>> Initializing node to get Hardware ID & Challenge Key..."
-sudo docker compose exec blockcastd blockcastd init
+$SUDO docker compose exec blockcastd blockcastd init
 
 echo ""
 echo ">>> DONE! Now follow the next steps:"
