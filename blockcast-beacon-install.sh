@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # ╔═══════════════════════════════════════╗
 # ║   BLOCKCAST BEACON AUTO-INSTALLER    ║
 # ║         by SAINT KHEN — @admirkhen   ║
@@ -26,17 +24,17 @@ cd beacon-docker-compose || {
 
 # Start the containers
 echo ">>> Starting Blockcast BEACON Node..."
-docker compose up -d
+sudo docker compose up -d
 
 echo ">>> Checking container status..."
-docker compose ps
+sudo docker compose ps
 
 # Wait a few seconds to ensure services are up
 sleep 5
 
 # Initialize and fetch Hardware ID + Challenge Key
 echo ">>> Initializing node to get Hardware ID & Challenge Key..."
-docker compose exec blockcastd blockcastd init
+sudo docker compose exec blockcastd blockcastd init
 
 echo ""
 echo ">>> DONE! Now follow the next steps:"
