@@ -59,9 +59,20 @@ Backup your private key from:
 ---
 To restart the node after a system reboot:
  ```bash
-docker compose up -d
+ cd blockcast-beacon-auto && cd beacon-docker-compose
+```
+```bash
+ docker compose up -d
  ```
 This will resume your Blockcast node without resetting your keys or registration.
+
+---
+To check logs :
+```bash
+docker compose logs -f blockcastd
+```
+most variables would have successful attached to them.
+and it would display online in the main site.
 
 _____________________-___-_--__-_-_-_-_-_-_-__--___-_-_-__-_-__-_-_-_-_-_-_-_-__-_-_-__-_-_-__-_-_-_--_-__-_-_-_-_-_-_-_-
 1. BACK UP YOUR PRIVATE KEY (BEFORE VPS RESET)
