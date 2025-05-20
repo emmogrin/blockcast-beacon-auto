@@ -74,7 +74,7 @@ docker compose logs -f blockcastd
 most variables would have successful attached to them.
 and it would display online in the main site.
 
-_____________________-___-_--__-_-_-_-_-_-_-__--___-_-_-__-_-__-_-_-_-_-_-_-_-__-_-_-__-_-_-__-_-_-_--_-__-_-_-_-_-_-_-_-
+---
 1. BACK UP YOUR PRIVATE KEY (BEFORE VPS RESET)
 
 On your running node (phone or VPS), run:
