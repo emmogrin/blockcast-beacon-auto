@@ -19,6 +19,18 @@ This script automates:
 
 ## Quick Start
 
+install dependencies. 
+
+```bash
+apt update && apt upgrade -y
+```
+```bash
+apt install curl wget git build-essential -y
+```
+```bash
+curl -fsSL https://get.docker.com | sh
+```
+
 Open your terminal and run:
 
 ```bash
